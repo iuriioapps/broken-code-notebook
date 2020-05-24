@@ -1,2 +1,6 @@
-# broken-code-notebook
-Broken Code Notebook sync
+---
+description: All things development (and then some)
+---
+
+# Broken Code Notebook
+
