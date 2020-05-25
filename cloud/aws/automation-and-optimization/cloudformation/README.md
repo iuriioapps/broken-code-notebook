@@ -23,5 +23,25 @@
 * `Resources` is the only mandatory section of the CloudFormation template
 * `Transform` section is used to reference additional code stored in S3, allowing for code reuse
 
+```yaml
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  
+Parameters:
+  
+Metadata:
+  
+Mappings:
+  
+Conditions:
+  
+Resources:
+  
+Transform:
+  
+Outputs:
+
+```
+
 
 
