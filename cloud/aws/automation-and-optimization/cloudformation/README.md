@@ -22,6 +22,7 @@
 * The resulting resources are called a Stack
 * `Resources` is the only mandatory section of the CloudFormation template
 * `Transform` section is used to reference additional code stored in S3, allowing for code reuse
+* All keys in the template file are CASE SENSITIVE, if there is a mistake in the template stack creation/update will fail.
 
 ```yaml
 AWSTemplateFormatVersion: 2010-09-09
