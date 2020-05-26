@@ -35,7 +35,7 @@ Mappings:
   
 Conditions:
   
-Resources:
+Resources: # required
   
 Transform:
   
