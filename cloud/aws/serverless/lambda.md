@@ -130,7 +130,9 @@ Per function limits, can not be changed:
       <td style="text-align:left">1024</td>
     </tr>
   </tbody>
-</table>### Versioning and aliases
+</table>
+
+### Versioning and aliases
 
 * By default, there is only one version of the code, referred to as `$LATEST`
 * You can use versions to manage the deployment of your Lambda code. You can change the function code and settings only of the unpublished version of a function. When you publish a version, the code and most of the settings are locked.
