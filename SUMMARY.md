@@ -72,6 +72,7 @@
       * [Links](cloud/aws/automation-and-optimization/cloudformation/links.md)
       * [Github resources](cloud/aws/automation-and-optimization/cloudformation/cloudformation-github-resources.md)
       * [YAML 101](cloud/aws/automation-and-optimization/cloudformation/yaml-101.md)
+      * [Videos](cloud/aws/automation-and-optimization/cloudformation/videos.md)
     * [OpsWorks](cloud/aws/automation-and-optimization/opsworks.md)
     * [Untitled](cloud/aws/automation-and-optimization/untitled-6.md)
   * [Application Services](cloud/aws/application-services/README.md)
