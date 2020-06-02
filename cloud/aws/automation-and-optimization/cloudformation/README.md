@@ -280,5 +280,39 @@ Conditions:
 * At stack creation or stack update, CloudFormation evaluates all condifitions in our template. During stack update, Resources that are now associated with a false condition are deleted.
 * **Note:** During stack update we can't update conditions by themselves. We can update conditions only when we include changes that add, modify or delete resources.
 
+### [Outputs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html)
+
+* Output section declares output values that we can
+  * Import into another stack \(to create cross-stack references\)
+  * When using nested stacks, we can see how outputs of a nested stack are used in Root Stack
+  * We can view outputs in the CloudFormation console
+* We can declare maximum of 60outputs in a template
+
+```yaml
+Outputs:
+  Logical ID:
+    Description: Information about the value
+    Value: Value to return
+    Export:
+      Name: Value to export
+```
+
+* Export \(optional property\)
+  * Export contain resource output used for cross-stack reference
+  * For each AWS account, Export name must be unique within the region. As it should be unique, we create the export name as `"AWS::StackName"-ExportName`
+  * We can't create cross-stack references across regions
+  * We can use the intrinsic function `Fn::ImportValue` to import values that have been exported within the same region
+  * For outputs, the value of the `Name` property of an `Export` can't use `Ref` of `GetAtt` function that depend on a resource
+  * We can't delete a stack if another stack references one of it's outputs
+  * We can't modify of remove an output value that is referenced by another stack
+  * We can use Outputs in combination with Conditions.
+
+### [Metadata](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html)
+
+* You can use the optional Metadata section to include arbitrary JSON or YAML objects that provide details about the template. For example, you can include template implementation details about specific resources. During a stack update, you cannot update the Metadata section by itself. You can update it only when you include changes that add, modify, or delete resources.
+  * `AWS::CloudFormation::Init` - Defines configuration tasks for the cfn-init helper script. This script is useful for configuring and installing applications on EC2 instances.
+  * `AWS::CloudFormation::Interface` - Defines the grouping and ordering of input parameters when they are displayed in the AWS CloudFormation console. By default, the AWS CloudFormation console alphabetically sorts parameters by their logical ID.
+  * `AWS::CloudFormation::Designer` - Describes how your resources are laid out in AWS CloudFormation Designer \(Designer\). Designer automatically adds this information when you use it to create and update templates.
+
 
 
