@@ -229,5 +229,56 @@ Pseudo parameters are parameters that are predefined by AWS CloudFormation. You 
 * **AWS::StackName** - Current name of the stack
 * **AWS::URLSuffix** - Suffix for a domain, typically `amazonaws.com`
 
+### [Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
+
+* Enable us to input custom values to our template each time when we create or update the stack
+* There can be maximum of 60 parameters in the template
+* Each parameter must be given a logical name \(logical ID\), which must be alphanumeric and unique among all logical names within the template
+* Each parameter must be assigned a parameter type that is supported by AWS CloudFormation
+* Each parameter must be assigned a value at runtime for AWS CloudFormation to successfully provision the stack. We can optionally specify a default value to use unless another value is provided
+* Parameters must be declared and referenced from within the same template. You can reference parameters from the Resources and Outputs sections of the template
+* Parameter type can one of the supported built-in types, like String, List, etc, or AWS-specific parameters, like `AWS::EC2::KeyPair::KeyName` or parameters that are linked to SSM Parameter Store \(`AWS::SSM::Parameter::Value`\)
+
+```yaml
+Parameters:
+  ParameterLogicalID:
+    Type: DataType
+    ParameterProperty: value
+```
+
+### [Mappings](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html)
+
+* The optional Mappings section matches a key to a corresponding set of named values. For example, if you want to set values based on a region, you can create a mapping that uses the region name as a key and contains the values you want to specify for each specific region. You use the `Fn::FindInMap` intrinsic function to retrieve values in a map.
+
+```yaml
+Mappings: 
+  Mapping01: 
+    Key01: 
+      Name: Value01
+    Key02: 
+      Name: Value02
+    Key03: 
+      Name: Value03
+```
+
+### [Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
+
+* The optional Conditions section contains statements that define the circumstances under which entities are created or configured. For example, you can create a condition and then associate it with a resource or output so that AWS CloudFormation only creates the resource or output if the condition is true. Similarly, you can associate the condition with a property so that AWS CloudFormation only sets the property to a specific value if the condition is true. If the condition is false, AWS CloudFormation sets the property to a different value that you specify.
+
+```yaml
+Conditions:
+  Logical ID:
+    Intrinsic function
+```
+
+* Conditions are evaluated based on predefined pseudo parameters or input parameter values that we specify when we create or update stack
+* Within each condition we can reference other condition
+* We can associate these conditions in three places
+  * Resources
+  * Resource properties
+  * Outputs
+* At stack creation or stack update, CloudFormation evaluates all condifitions in our template. During stack update, Resources that are now associated with a false condition are deleted.
+* **Note:** During stack update we can't update conditions by themselves. We can update conditions only when we include changes that add, modify or delete resources.
+
 
 
