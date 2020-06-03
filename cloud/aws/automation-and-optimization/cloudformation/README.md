@@ -314,5 +314,47 @@ Outputs:
   * `AWS::CloudFormation::Interface` - Defines the grouping and ordering of input parameters when they are displayed in the AWS CloudFormation console. By default, the AWS CloudFormation console alphabetically sorts parameters by their logical ID.
   * `AWS::CloudFormation::Designer` - Describes how your resources are laid out in AWS CloudFormation Designer \(Designer\). Designer automatically adds this information when you use it to create and update templates.
 
+### [Helper scripts](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
+
+AWS CloudFormation provides the following Python helper scripts that you can use to install software and start services on an Amazon EC2 instance that you create as part of your stack:
+
+* [**cfn-init**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html): Use to retrieve and interpret resource metadata, install packages, create files, and start services.
+* [**cfn-signal**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html): Use to signal with a CreationPolicy or WaitCondition, so you can synchronize other resources in the stack when the prerequisite resource or application is ready.
+* [**cfn-get-metadata**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-get-metadata.html): Use to retrieve metadata for a resource or path to a specific key.
+* [**cfn-hup**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html): Use to check for updates to metadata and execute custom hooks when changes are detected.
+
+You call the scripts directly from your template. The scripts work in conjunction with resource metadata that's defined in the same template. The scripts run on the Amazon EC2 instance during the stack creation process.
+
+#### [AWS::CloudFormation::Init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html)
+
+* Use the AWS::CloudFormation::Init type to include metadata on an Amazon EC2 instance for the cfn-init helper script. If your template calls the cfn-init script, the script looks for resource metadata rooted in the AWS::CloudFormation::Init metadata key. 
+* The metadata is organized into config keys, which you can group into configsets. You can specify a configset when you call cfn-init in your template. If you don't specify a configset, cfn-init looks for a single config key named **config**.
+* The cfn-init helper script processes these configuration sections in the following order: packages, groups, users, sources, files, commands, and then services. If you require a different order, separate your sections into different config keys, and then use a configset that specifies the order in which the config keys should be processed.
+
+```yaml
+Resources: 
+  MyInstance: 
+    Type: AWS::EC2::Instance
+    Metadata: 
+      AWS::CloudFormation::Init: 
+        config: 
+          packages: 
+            :
+          groups: 
+            :
+          users: 
+            :
+          sources: 
+            :
+          files: 
+            :
+          commands: 
+            :
+          services: 
+            :
+    Properties: 
+      :
+```
+
 
 
