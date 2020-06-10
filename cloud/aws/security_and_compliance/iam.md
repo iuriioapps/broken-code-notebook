@@ -18,7 +18,7 @@ description: Identity and Access Management
 * **Customer-managed policy** - a standalone policy that you create and administer inside your own AWS account. You can attach this policy to multiple users, groups and roles - but only within your own account.
 * **Inline policy** - an IAM policy which is embedded within a single user, group or role to which it applies. There is a strict 1:1 relationship between the entity and the policy. When you delete the user, group or role in which the inline policy is embedded, the policy is also be deleted.
 
-MFA Reporting and IAM
+#### MFA Reporting and IAM
 
 * You can enable MFA using the CLI and by using Console.
 * MFA can be enabled on both root account and user accounts.
