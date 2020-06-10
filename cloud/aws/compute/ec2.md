@@ -113,7 +113,7 @@ When you launch a new EC2 instance, EC2 service attempts to place an instance in
 
 * **Cluster** - packs instances close together inside the AZ. This strategy enables workloads to achieve low-latency network performance for tightly-coupled node-to-node communication that is typical of HPC \(high-performance compute\) applications.
 * **Partition** - spreads your instances across logical partitions such that group of instances in one partition do not share the underlying hardware with group of instances in different partitions.This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra and Kafka.
-* **Spread** - strictly places a small group of instances across distinct underlying hardware to reduce dorrelated failure. 
+* **Spread** - strictly places a small group of instances across distinct underlying hardware to reduce correlated failure. 
 * A clustered placement group can't span multiple AZs. A spread and partitioned placement group can.
 * The name you specify for placement group must be unique within your AWS account.
 * Only certain types of instances can be launched in a placement group \(compute optimized, GPU, memory optimized, storage optimized\).
