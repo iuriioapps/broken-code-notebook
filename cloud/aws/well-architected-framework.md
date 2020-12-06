@@ -160,9 +160,9 @@
   * Look for abnormal behavior in your logs
     * Capture and analyze logs
     * Regularly audit controls and configurations \(AWS CloudFormation drift, AWS Config\)
-  * Defence in depth
+  * Defense in depth
     * Establish trust boundaries
-    * Protect network in/out
+    * Protect the network in/out
     * Protect all hosts
     * Configure services to meet security posture needs
     * Enforce service level protection
@@ -171,7 +171,7 @@
     * Who should have access to the data and when?
     * Encrypt in transit and at rest
     * Backup your data, test backups
-  * Contain and recover from unplanned event
+  * Contain and recover from an unplanned event
     * Do you have a plan to tag affected resources?
     * Can you adjust permissions to allow for containment?
     * Can you redeploy to recover quickly?
