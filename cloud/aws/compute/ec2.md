@@ -24,12 +24,12 @@ description: Elastic Compute Cloud
 * Users able to make upfront payments to reduce their total computing costs even further
   * Standard RI \(up to 75% off On-Demand\)
   * Convertible RI \(up to 54% off On-Demand\), capability to change the attributes of the RI as long as the exchange results in the creation of Reserved Instances of equal or greater value.
-  * Scheduled RI's available to launch within the time windows you reserve. This options allows you to match your capacity reservation to a predictable recurring schedule that only requires a fraction of a day, a week or a month.
+  * Scheduled RI's available to launch within the time windows you reserve. This option allows you to match your capacity reservation to a predictable recurring schedule that only requires a fraction of a day, a week or a month.
 
 #### Spot
 
-* Application that have flexible start and end times.
-* Application that are only feasible at very low compute prices.
+* Application that has flexible start and end times.
+* Application that is only feasible at very low compute prices.
 * Users with urgent computing needs for large amounts of additional capacity.
 
 #### Dedicated Hosts
@@ -42,17 +42,17 @@ description: Elastic Compute Cloud
 #### Dedicated Instances vs. Dedicated Hosts
 
 * Both dedicated instances and dedicated hosts have dedicated hardware.
-* Dedicated instances are charched by the instance, dedicated hosts are charged by the host.
+* Dedicated instances are charged by the instance, dedicated hosts are charged by the host.
 * If you have specific regulatory requirements or licensing conditions, choose dedicated hosts.
 * Dedicated instances may share the same hardware with other AWS instances from the same account that are not dedicated.
-* Dedicated hosts give you much better visibility into things like sockets, cores and host ID.
+* Dedicated hosts give you much better visibility into things like sockets, cores, and host ID.
 
 ### Instance types
 
 | FAMILY | SPECIALITY | USE CASE |
 | :--- | :--- | :--- |
 | **F1** | FPGA | Genomics, financial, video, big data |
-| **I3** | High speed storage | NoSQL DB, data warehousing |
+| **I3** | High-speed storage | NoSQL DB, data warehousing |
 | **G3** | Graphics intensive | Video encoding, 3D |
 | **H1** | High disk throughput | MapReduce, HDFS |
 | **T3** | Low cost, general | Web servers, small DBs |
@@ -78,12 +78,12 @@ description: Elastic Compute Cloud
 
 ### Troubleshooting
 
-* Instances not launching in to Autoscaling group
+* Instances not launching into Autoscaling group
   * associated key pair does not exist
   * security group does not exist
   * autoscaling config is not working correctly
   * autoscaling group not found
-  * instance type specified is not support in AZ
+  * instance type specified is not supported in AZ
   * AZ is no longer supported
   * invalid EBS device mapping
   * autoscaling service is not enabled in your account
@@ -144,7 +144,7 @@ When you launch a new EC2 instance, EC2 service attempts to place an instance in
   * Uses single root I/O virtualization \(SR-IOV\) to provide high-performance networking capabilities on supported instance types.
   * What is `Enhanced Networking`
     * It uses single root I/O virtualization \(SR-IOV\) to provide high-performance networking capabilities on supported instance types. SR-IOV is a method of device virtualization that provides higher I/O performance and lower CPU utilization when compared to traditional virtualized network interfaces.
-    * Enahanced networking provides higher bandwidth, higher packet per second \(PPS\) performance and consistently lower inter-instance latencies. There is no additional charge for using enhanced networking.
+    * Enhanced networking provides higher bandwidth, higher packet per second \(PPS\) performance and consistently lower inter-instance latencies. There is no additional charge for using enhanced networking.
     * Use where you want good network performance.
   * Depending on your instance type, enhanced networking can be enabled using:
     * **Elastic Network Adapter \(ENA\)**, which supports network speeds of up to **100 Gbps** for supported instance types

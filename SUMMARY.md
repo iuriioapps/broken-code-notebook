@@ -2,10 +2,6 @@
 
 * [Broken Code Notebook](README.md)
 
-## Systems Design
-
-* [Untitled](systems-design/untitled.md)
-
 ## Cloud
 
 * [AWS](cloud/aws/README.md)
@@ -112,7 +108,6 @@
   * [CRD's and The Operator Pattern](containers-and-microservices/kubernetes/crds-and-the-operator-pattern.md)
   * [Kubernetes Dashboard](containers-and-microservices/kubernetes/kubernetes-dashboard.md)
   * [Kubectl Namespaces and Context](containers-and-microservices/kubernetes/kubectl-namespaces-and-context.md)
-* [Microservices](containers-and-microservices/microservices.md)
 
 ## UX
 
