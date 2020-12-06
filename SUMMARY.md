@@ -109,9 +109,9 @@
   * [Kubernetes Dashboard](containers-and-microservices/kubernetes/kubernetes-dashboard.md)
   * [Kubectl Namespaces and Context](containers-and-microservices/kubernetes/kubectl-namespaces-and-context.md)
 
-## UX
+## Frontend
 
-* [Resources](ux/resources.md)
-* [Design](ux/design/README.md)
-  * [Search experience](ux/design/search-experience.md)
+* [Resources](frontend/resources.md)
+* [Design](frontend/design/README.md)
+  * [Search experience](frontend/design/search-experience.md)
 
