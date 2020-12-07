@@ -10,8 +10,15 @@ description: UX resources on the Web
 * 🖼 [Behance](https://www.behance.net/)
 * 🖼 [UpLabs](https://www.uplabs.com/)
 
-### Material Design
+### Illustrations, icons
+
+* 💥 [Material design icons](https://materialdesignicons.com/)
+
+### Design guidelines
 
 * ✨[Material Design guidelines](https://material.io/design/)
-* ✨[Material design icons](https://materialdesignicons.com/)
+
+### Tools
+
+* [Can I use...](https://caniuse.com/) - check feature \(HTML, CSS, JS...\) support in the browsers.
 
