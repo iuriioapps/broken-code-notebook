@@ -22,4 +22,7 @@ description: UX resources on the Web
 ### Tools
 
 * [Can I use...](https://caniuse.com/) - check feature \(HTML, CSS, JS...\) support in the browsers.
+* [Make some waves](https://getwaves.io/)
+* [Blob maker](https://www.blobmaker.app/)
+* [Clippy](https://bennettfeely.com/clippy/) - CSS clip-path maker
 
