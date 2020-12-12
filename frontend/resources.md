@@ -51,3 +51,15 @@ description: UX resources on the Web
 * [SVG URL encoder](https://yoksel.github.io/url-encoder/)
 * [HTML entity lookup](http://entity-lookup.leftlogic.com/)
 
+Animation
+
+* [Animate.css](https://animate.style/)
+* [Easing functions](https://easings.net/en)
+* [Cubic bezier](https://cubic-bezier.com/)
+* [Move.js](https://github.com/visionmedia/move.js) - CSS JavaScript animation framework
+* [Velocity.js](http://velocityjs.org/) - animation engine
+
+References
+
+* [CSS reference](http://tympanus.net/codrops/css_reference/)
+* 
