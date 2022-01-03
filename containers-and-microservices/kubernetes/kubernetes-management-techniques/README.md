@@ -45,11 +45,9 @@ status: {}
   * good for prod of small environments, single file per command
   * store your changes in git-based yaml files
   * hard to automate
-* **Declarative objects**: apply -f file.yaml or dir\, diff
+* **Declarative objects**: apply -f file.yaml or dir\\, diff
   * best for prod, easier to automate
   * harder to understand and predict changes
 * **Most important rule**:
   * don't mix these three approaches
-
-
 

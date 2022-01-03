@@ -7,8 +7,8 @@ description: Elastic Block Store
 {% hint style="info" %}
 IOPS - Input / output Operations per Second
 
-* TiB - Tibibyte \( $$2^{40}$$ bytes\), 1TiB  ~= 1.0995 TB
-* GiB - Gibibyte \( $$2^{30}$$ bytes\), 1GiB ~= 1.074 GB
+* TiB - Tibibyte ( $$2^{40}$$ bytes), 1TiB  \~= 1.0995 TB
+* GiB - Gibibyte ( $$2^{30}$$ bytes), 1GiB \~= 1.074 GB
 {% endhint %}
 
 Amazon EBS provides persistent block storage volumes for use with EC2 instances. Each EBS volume is automatically replicated within its AZ to protect from component failure, offering high availability and durability.
@@ -88,10 +88,11 @@ Previous generation HDD
 
 ### EBS vs Instance Store Volumes
 
-All AMIs are categorized as either backed by EBS or backed by instance store. 
+All AMIs are categorized as either backed by EBS or backed by instance store.&#x20;
 
 * For EBS volumes: the root device for an instance launched from the AMI is an Amazon EBS volume created from EBS snapshot.
-* For instance store volumes: the root device for an instance launched from the AMI is an instance store volume created from a template stored in S3. 
+* For instance store volumes: the root device for an instance launched from the AMI is an instance store volume created from a template stored in S3.\
+
 * Instance store volumes are sometimes called _**Ephemeral Storage**_
 * Instance store volumes can not be stopped. If the underlying host fails, you will lose your data.
 * EBS backed instances can be stopped. You will not lose the data on this instance if it's stopped.
@@ -107,15 +108,14 @@ All AMIs are categorized as either backed by EBS or backed by instance store.
 
 ### Pre-warming EBS volumes
 
-New EBS volumes receive their maximum performance the moment they are available and do not require initialization \(formerly known as pre-warming\). However, storage blocks on volumes that were restored from snapshots must be initialized \(pulled down from S3 and written to the volume\). before you can access the block. This preliminary action takes time and can cause a significant increase in latency of an I/O operation the first time each block is accessed. For most applications, amortizing this cost over the lifetime of the volume is acceptable. Performance is restored after the data is accessed once.
+New EBS volumes receive their maximum performance the moment they are available and do not require initialization (formerly known as pre-warming). However, storage blocks on volumes that were restored from snapshots must be initialized (pulled down from S3 and written to the volume). before you can access the block. This preliminary action takes time and can cause a significant increase in latency of an I/O operation the first time each block is accessed. For most applications, amortizing this cost over the lifetime of the volume is acceptable. Performance is restored after the data is accessed once.
 
 You can avoid this performance hit in the production environment by reading from all of the blocks on your volume before you use it; this process is called initialization. For a new volume created from snapshot, you should read all the blocks that have data before using the volume.
 
 ### Modifying EBS volumes
 
-If your EBS volume is attached to a current generation EC2 instance type, you can increase its size, change it's volume type or \(for io1 volumes\) adjust its IOPS performance, all without detaching it. You can apply those changes to detached volumes as well.
+If your EBS volume is attached to a current generation EC2 instance type, you can increase its size, change it's volume type or (for io1 volumes) adjust its IOPS performance, all without detaching it. You can apply those changes to detached volumes as well.
 
-* Issue the modification command \(console or command line\).
+* Issue the modification command (console or command line).
 * Monitor the progress of the modification.
 * If the size of the volume was modified, extend the volume's file system to take advantage of the increased storage capacity.
-

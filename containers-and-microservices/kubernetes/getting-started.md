@@ -2,8 +2,8 @@
 
 ## Basic terms: system parts
 
-* Kubernetes: the whole orchestration system \(K8s "k-eights" or Kube for short\)
-* Kubectl: CLI to configure Kubernetes and manage apps \(using "cube control" official pronunciation\)
+* Kubernetes: the whole orchestration system (K8s "k-eights" or Kube for short)
+* Kubectl: CLI to configure Kubernetes and manage apps (using "cube control" official pronunciation)
 * Node: single server in the Kubernetes cluster
 * Kubelet: Kubernetes agent running on nodes
 * Control plane: set of containers that manage the cluster
@@ -21,13 +21,14 @@
   * Docker Toolbox on Windows - MiniKube. Uses VirtualBox to make Linux VM
     * Doesn't install `kubectl`, has to be installed separately
   * Your own Linux host or VM - MicroK8s. Installs Kubernetes right on the OS
-    * Uses snap \(rather apt or yum\) for install.
+    * Uses snap (rather apt or yum) for install.
     * Control MicroK8s service via `microk8s.` commands
     * `kubectl` accessible via `microk8s.kubectl`
-    * Add an alias to your shell \(.bash\_profile\):  `alias kubectl=microk8s.kubectl`
+    * Add an alias to your shell (.bash\_profile): \
+      `alias kubectl=microk8s.kubectl`
 * Kuberneters in a Browser
   * [http://play-with-k8s.com](http://play-with-k8s.com)
-  * katacoda.com 
+  * katacoda.com&#x20;
 
 ## Kubernetes Container Abstractions
 
@@ -41,9 +42,9 @@
 
 * Kubernetes is evolving, and so is the CLI
 * We get 3 ways to create pods from the kubectl CLI
-* > `kubectl run` \(changing to be only for pod creation\)
-* > `kubectl create` \(create some resources via CLI or YAML\)
-* > `kubectl apply` \(create / update anything via YAML\)
+* > `kubectl run` (changing to be only for pod creation)
+* > `kubectl create` (create some resources via CLI or YAML)
+* > `kubectl apply` (create / update anything via YAML)
 
 ### Basic commands
 
@@ -56,35 +57,29 @@
 
 ### Scaling ReplicaSets
 
-* Start new deployment for one replica/pod
+*   Start new deployment for one replica/pod
 
-    `kubectl run my-apache --image httpd`
+    &#x20; `kubectl run my-apache --image httpd`
+*   Scale deployment&#x20;
 
-* Scale deployment 
+    &#x20; `kubectl scale deploy/my-apache --replicas 2`
 
-    `kubectl scale deploy/my-apache --replicas 2`
-
-    `kubectl scale deployment my-apache --replicas 2` \(these are same commands\)
+    &#x20; `kubectl scale deployment my-apache --replicas 2` (these are same commands)
 
 ### Inspecting Deployments
 
-* Get logs
+*   Get logs
 
-    `kubectl logs deployment my-apache`
+    &#x20; `kubectl logs deployment my-apache`
+*   Get logs from pods with a given label
 
-* Get logs from pods with a given label
+    &#x20; `kubectl logs -l run=my-apache`
+*   Stern for Kubernetes can be used to tail logs from multiple pods ([https://github.com/wercker/stern](https://github.com/wercker/stern))
 
-    `kubectl logs -l run=my-apache`
+    &#x20; `brew install stern`
 
-* Stern for Kubernetes can be used to tail logs from multiple pods \([https://github.com/wercker/stern](https://github.com/wercker/stern)\)
+    &#x20; `stern pod-query`
+*   Get pod info
 
-    `brew install stern`
-
-    `stern pod-query`
-
-* Get pod info
-
-    `kubectl describe pod/<pod-id>` \(pod-id can be obtained with kubectl get pods\)\`
-
-
+    &#x20; `kubectl describe pod/<pod-id>` (pod-id can be obtained with kubectl get pods)\`
 

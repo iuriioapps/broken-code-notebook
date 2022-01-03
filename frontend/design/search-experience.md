@@ -5,10 +5,10 @@
 ### What are your users’ information needs and intents?
 
 * Navigate, find a particular web page.
-* Find specific information \(“Weather in Prague”, “Capital of Australia”\).
-* Find advice \(“How to design a search interface”\).
+* Find specific information (“Weather in Prague”, “Capital of Australia”).
+* Find advice (“How to design a search interface”).
 * Find resources, applications, documents.
-* Find facts, data \(“How many active users do we have on our website?”\).
+* Find facts, data (“How many active users do we have on our website?”).
 * Gather information from different sources.
 * Analyse data.
 
@@ -89,8 +89,8 @@ Some companies takes result previews to the next usability level and give users 
 #### Interface feedback
 
 * Loading icon or progress indicator
-* Information about search process \(results, time, applied filters\)
-* System notifications \(example, if results are time sensitive, the user might need to refresh them\)
+* Information about search process (results, time, applied filters)
+* System notifications (example, if results are time sensitive, the user might need to refresh them)
 * Not found page
 * Microinteractions
 
@@ -107,10 +107,10 @@ Well-defined filters are highly important when designing complex sites. They wou
 * Labels
 * Types of filters
 * Placement
-* Actions \(save and edit custom filters\)
+* Actions (save and edit custom filters)
 * Sorting
 
-#### Customisation 
+#### Customisation&#x20;
 
 If search is a key function in your application and an important part in the workflow of your users, customisation would be important for them. You may allow users to adjust a result page layout, change fonts and colors, define how many results are shown on a page, save filters, customise sorting parameters or add call to actions.
 
@@ -118,11 +118,11 @@ If search is a key function in your application and an important part in the wor
 
 Think of how user setting, previous queries, preferences or other information about a user can improve the search experience.
 
-#### Keyboard shortcuts 
+#### Keyboard shortcuts&#x20;
 
 A set of keyboard shortcuts would make navigating through search results much easier.
 
-#### Relevance Indicators 
+#### Relevance Indicators&#x20;
 
 Depending on the type of content, how precise the results are, and how big the gap in the relevance of results is, relevance indicators may help make the decision quicker.
 
@@ -166,35 +166,34 @@ What types of inputs should your search support?
 
 If there are many parameters for finding an item, you might consider using advanced search options and logical operations. Example: I want to find all clients who live in Berlin AND made a purchase during the last month AND their age is between 45–60. How can we support these types of queries with interface?
 
-* Logical operations \(AND, OR, NOT, ~, etc\)
+* Logical operations (AND, OR, NOT, \~, etc)
 * Interface based advanced search
 
 ## Part 3. How to optimise your search design?
 
 Make it prominent and work on the positioning, contrast and sizing.
 
-1. Put the search box where users expect to find it
+1.  Put the search box where users expect to find it
 
-   A study by A. Dawn Shaikh and Keisi Lenz in a survey of 142 participants shows that users expect the search input field on the top right corner of the header.
+    A study by A. Dawn Shaikh and Keisi Lenz in a survey of 142 participants shows that users expect the search input field on the top right corner of the header.
+2. Make your search recognizable\
+   To make your search recognizable, you can play with the contrast and the visual representation of your search. Increasing the contrast between the input field and its border is one of the most effective ways to emphasize the search box.
+3.  Use a Magnifying glass icon
 
-2. Make your search recognizable To make your search recognizable, you can play with the contrast and the visual representation of your search. Increasing the contrast between the input field and its border is one of the most effective ways to emphasize the search box.
-3. Use a Magnifying glass icon
+    The magnifying glass is a worldwide recognized icon. Various applications and operating systems use it to convey search. This contributed to user’s familiarity and expectations about the icon.
 
-   The magnifying glass is a worldwide recognized icon. Various applications and operating systems use it to convey search. This contributed to user’s familiarity and expectations about the icon.
+    * Use a schematic icon and avoid adding details, the simpler, the better
+    * Less is more, fewer graphic details in your magnifying glass speed up recognition
+    * Directional icons need to be mirrored when designing in a right-to-left (RTL), such as Arabic and Hebrew. The search icon represents holding an object with the right hand. It should not be mirrored in a RTL-writing country.
+4.  Make your search bar wide enough to accommodate your user’s query
 
-   * Use a schematic icon and avoid adding details, the simpler, the better
-   * Less is more, fewer graphic details in your magnifying glass speed up recognition
-   * Directional icons need to be mirrored when designing in a right-to-left \(RTL\), such as Arabic and Hebrew. The search icon represents holding an object with the right hand. It should not be mirrored in a RTL-writing country.
+    In Jacob Nielsen article, The Magnifying-Glass Icon in Search Design: Pros and Cons, the search input field should be wide enough to contain 27-characters. This would accommodate 90% of queries in the world.
 
-4. Make your search bar wide enough to accommodate your user’s query
-
-   In Jacob Nielsen article, The Magnifying-Glass Icon in Search Design: Pros and Cons, the search input field should be wide enough to contain 27-characters. This would accommodate 90% of queries in the world.
-
-   Small input search forces the user to go right to left and vice versa to read the full query. Forcing the query’s scroll harms usability.
+    Small input search forces the user to go right to left and vice versa to read the full query. Forcing the query’s scroll harms usability.
 
 ## Links
 
 * [https://uxplanet.org/search-interface-20-things-to-consider-4b1466e98881](https://uxplanet.org/search-interface-20-things-to-consider-4b1466e98881)
 * [https://blog.prototypr.io/designing-search-c96cc5d05ddf](https://blog.prototypr.io/designing-search-c96cc5d05ddf)
 * [https://blog.prototypr.io/5-easy-and-effective-tips-to-get-more-out-of-your-search-f53d55d063de](https://blog.prototypr.io/5-easy-and-effective-tips-to-get-more-out-of-your-search-f53d55d063de)
-* 
+*

@@ -32,10 +32,10 @@ description: Docker container clusters
 * Compose now ignores '`deploy`:'; Swarm ignores '`build`:'
 * `docker-compose` CLI is not needed on Swarm server
 
-`docker stack deploy -c my-stack.yml demoapp  
-docker stack services demoapp`
+`docker stack deploy -c my-stack.yml demoapp`\
+`docker stack services demoapp`
 
-##  Swarm Secrets Storage
+## &#x20;Swarm Secrets Storage
 
 * Easiest "secure" solution for storing secrets in Swarm
 * Supports generic strings or binary content up to 500Kb in size
@@ -49,15 +49,15 @@ docker stack services demoapp`
 * `/run/secrets/{secrets-name}` or `/run/secrets/{secrets-alias}`
 * Local docker-compose can use file-based secrets, but not secure
 
-### Option 1 - create from file 
+### Option 1 - create from file&#x20;
 
 `docker secret create psql_user psql_user.txt`
 
-### Option 2 - Create from STDIN 
+### Option 2 - Create from STDIN&#x20;
 
 `echo "MyDbPassWORD" | docker secret create psql_user -`
 
-// Enable secret in the service 
+// Enable secret in the service&#x20;
 
 `docker service create --name psql --secret psql_user --secret psql_pass -e POSTGRES_PASSWORD_FILE=/run/secrets/psql_pass -e POSTGRES_USER_FILE=/run/secrets/psql_user postgres`
 
@@ -71,6 +71,4 @@ secrets:
     external: true
     name: redis_secret
 ```
-
-
 
