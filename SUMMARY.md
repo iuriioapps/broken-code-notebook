@@ -117,7 +117,13 @@
 
 ***
 
-* [Architecture and Design](architecture-and-design.md)
+* [Architecture and Design](architecture-and-design/README.md)
+  * [Architectural Decision Records](architecture-and-design/architectural-decision-records.md)
+  * [Trade-off Analysis](architecture-and-design/trade-off-analysis.md)
+  * [Data Decomposition Drivers](architecture-and-design/data-decomposition-drivers.md)
+  * [Selecting a Database Type](architecture-and-design/selecting-a-database-type.md)
+  * [Service Granularity](architecture-and-design/service-granularity.md)
+  * [Consumer-driven Contracts](architecture-and-design/consumer-driven-contracts.md)
 
 ## Stuff
 
