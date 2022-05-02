@@ -115,6 +115,10 @@
 * [Design](frontend/design/README.md)
   * [Search experience](frontend/design/search-experience.md)
 
+***
+
+* [Architecture and Design](architecture-and-design.md)
+
 ## Stuff
 
 * [Japanese](stuff/japanese/README.md)
