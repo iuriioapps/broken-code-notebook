@@ -128,7 +128,7 @@
 ## Stuff
 
 * [Japanese](stuff/japanese/README.md)
-  * [N5](stuff/japanese/n5/README.md)
-    * [N5: Grammar points](stuff/japanese/n5/n5-grammar-points.md)
+  * [N5](stuff/japanese/jlpt-n5/README.md)
+    * [N5: Grammar points](stuff/japanese/jlpt-n5/n5-grammar-points.md)
   * [N4](stuff/japanese/n4/README.md)
     * [N4: Grammar points](stuff/japanese/n4/n4-grammar-points.md)
