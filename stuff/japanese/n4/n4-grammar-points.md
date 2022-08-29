@@ -60,7 +60,7 @@ description: Quick summary of N4 grammar
 
 ー
 
-### 〜てもいいです・〜てはいけません
+### 〜てもいいです / 〜てはいけません / 〜ても構いません
 
 ー
 
@@ -124,7 +124,7 @@ description: Quick summary of N4 grammar
 
 ー
 
-### 〜はずです
+### 〜はずです / 〜はずがありません
 
 ー
 
@@ -288,4 +288,23 @@ description: Quick summary of N4 grammar
 
 ー
 
-&#x20;
+### 〜ばいい・・
+
+ー&#x20;
+
+### 〜ずに・・
+
+ー
+
+### 〜だろう / 〜だろうと思う
+
+ー
+
+### 〜しか・・ない
+
+ー
+
+### 〜がする
+
+ー
+
