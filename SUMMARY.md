@@ -1,6 +1,13 @@
 # Table of contents
 
 * [Broken Code Notebook](README.md)
+* [Architecture and Design](architecture-and-design/README.md)
+  * [Architectural Decision Records](architecture-and-design/architectural-decision-records.md)
+  * [Trade-off Analysis](architecture-and-design/trade-off-analysis.md)
+  * [Data Decomposition Drivers](architecture-and-design/data-decomposition-drivers.md)
+  * [Selecting a Database Type](architecture-and-design/selecting-a-database-type.md)
+  * [Service Granularity](architecture-and-design/service-granularity.md)
+  * [Consumer-driven Contracts](architecture-and-design/consumer-driven-contracts.md)
 
 ## Cloud
 
@@ -83,6 +90,16 @@
     * [SAM](cloud/aws/serverless/sam.md)
     * [Untitled](cloud/aws/serverless/untitled.md)
   * [Well-Architected Framework](cloud/aws/well-architected-framework.md)
+* [Azure](cloud/azure/README.md)
+  * [Organization & Management](cloud/azure/organization-and-management.md)
+  * [Authentication & Authorization](cloud/azure/authentication-and-authorization.md)
+  * [Compute](cloud/azure/compute.md)
+  * [Networking](cloud/azure/networking.md)
+  * [Storage](cloud/azure/storage.md)
+  * [Databases](cloud/azure/databases.md)
+  * [Security](cloud/azure/security.md)
+  * [Privacy, Compliance & Trust](cloud/azure/privacy-compliance-and-trust.md)
+  * [Cost Management](cloud/azure/cost-management.md)
 
 ## Containers & Services <a href="#containers-and-microservices" id="containers-and-microservices"></a>
 
@@ -114,16 +131,6 @@
 * [Resources](frontend/resources.md)
 * [Design](frontend/design/README.md)
   * [Search experience](frontend/design/search-experience.md)
-
-***
-
-* [Architecture and Design](architecture-and-design/README.md)
-  * [Architectural Decision Records](architecture-and-design/architectural-decision-records.md)
-  * [Trade-off Analysis](architecture-and-design/trade-off-analysis.md)
-  * [Data Decomposition Drivers](architecture-and-design/data-decomposition-drivers.md)
-  * [Selecting a Database Type](architecture-and-design/selecting-a-database-type.md)
-  * [Service Granularity](architecture-and-design/service-granularity.md)
-  * [Consumer-driven Contracts](architecture-and-design/consumer-driven-contracts.md)
 
 ## Stuff
 
