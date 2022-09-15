@@ -91,6 +91,7 @@
     * [Untitled](cloud/aws/serverless/untitled.md)
   * [Well-Architected Framework](cloud/aws/well-architected-framework.md)
 * [Azure](cloud/azure/README.md)
+  * [Tools](cloud/azure/tools.md)
   * [Organization & Management](cloud/azure/organization-and-management.md)
   * [Authentication & Authorization](cloud/azure/authentication-and-authorization.md)
   * [Compute](cloud/azure/compute.md)
