@@ -34,7 +34,10 @@ description: Quick summary of N4 grammar
 * indicates the location of an action: "at, in"
 * indicates means: "by, with"&#x20;
 * indicates material used: "of, from, with"
-* indicates range - greatest, smallest,&#x20;
+* indicates range - greatest, smallest, oldest, newest, etc.
+* indicates the reason for something: "because of"
+
+
 
 ### &#x20;〜も・・
 
