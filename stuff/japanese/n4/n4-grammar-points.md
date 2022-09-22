@@ -6,13 +6,37 @@ description: Quick summary of N4 grammar
 
 ### 〜でも・・
 
-ー
+* て-form of です＋も
+* can be translated as "even"
+* noun+でも can represent an example of the noun or an extreme example of the noun.
+* not to be confused with two different particles combination で＋も
+
+{% hint style="success" %}
+**Examples:**
+
+これは子供でも出来る - Even a child can do it.
+
+水でも飲みませんか - Would you care for something to drink, like water? _("water" as an example)_&#x20;
+{% endhint %}
+
+* can be combined with "question words"
+
+{% hint style="info" %}
+* **誰でも** - no matter who; anyone
+* **何でも** - no matter what it is; anything
+* **いつでも** - no matter when; anytime&#x20;
+* **どこでも** - no matter where it is; anywhere
+* **どれでも** - no matter which
+{% endhint %}
 
 ### 〜で・・
 
-ー
+* indicates the location of an action: "at, in"
+* indicates means: "by, with"&#x20;
+* indicates material used: "of, from, with"
+* indicates range - greatest, smallest,&#x20;
 
-### 〜も・・
+### &#x20;〜も・・
 
 ー
 
